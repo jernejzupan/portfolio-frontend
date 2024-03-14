@@ -19,16 +19,15 @@ const dialPosition = ref(1)
 const currentRouteName = computed(() => route.name)
 
 onMounted(async () => {
-  await router.isReady();
-  dialPosition.value = navItems[route.name].id;
+  await router.isReady()
+  dialPosition.value = navItems[route.name].id
 })
 
 const mobileNavCollapsed = ref(true)
 
 function toggle() {
-  mobileNavCollapsed.value = !mobileNavCollapsed.value;
+  mobileNavCollapsed.value = !mobileNavCollapsed.value
 }
-
 </script>
 
 <template>
@@ -46,11 +45,10 @@ function toggle() {
     <RouterView />
   </main>
 
-  <footer> ©2024 by Jernej Zupan </footer>
+  <footer>©2024 by Jernej Zupan</footer>
 </template>
 
-<style scoped>
-
+<style>
 header {
   height: var(--header-height);
   display: flex;
@@ -66,12 +64,11 @@ header {
     @media (--tablet-breakpoint) {
       width: 600px;
     }
-
   }
 }
 
 main {
-  min-height: calc(100vh - var(--header-height) - var(--footer-height) );
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 footer {
@@ -80,6 +77,4 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-
 </style>

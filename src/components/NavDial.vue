@@ -13,7 +13,12 @@ const offset = computed(() => {
 
 <template>
   <div class="dial mb-collapsed">
-    <svg class="pointer" :style="{ left: offset }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+    <svg
+      class="pointer"
+      :style="{ left: offset }"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 10 10"
+    >
       <polygon points="0 10 10 10 5 0 0 10" />
     </svg>
   </div>

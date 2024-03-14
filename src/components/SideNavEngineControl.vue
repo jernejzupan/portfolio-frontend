@@ -13,8 +13,6 @@ function setPosition(position) {
 
 const rotation = computed(() => `rotate(${67.5 - (props.position - 1) * 45}deg)`)
 const translation = computed(() => `translate(0px, ${(props.position - 1) * 50}px)`)
-
-
 </script>
 
 <template>
@@ -38,8 +36,11 @@ const translation = computed(() => `translate(0px, ${(props.position - 1) * 50}p
       <text class="ec-text" transform="translate(175 290) rotate(-67.5)">
         <tspan @click="setPosition(4)" data-link="#segment--how">HOW</tspan>
       </text>
-      <path :style="{ transform: rotation }" class="ec-leaver"
-        d="m89,158l-16,24-8-8-8,8-35,4-5-4-7,8,8,8,4-4,35,4,8,8,8-8,16,24,138-23v-18l-138-23Zm72,44l-65,4-3-13,4-3-4-3,3-13,65,4-3,12,3,12Z" />
+      <path
+        :style="{ transform: rotation }"
+        class="ec-leaver"
+        d="m89,158l-16,24-8-8-8,8-35,4-5-4-7,8,8,8,4-4,35,4,8,8,8-8,16,24,138-23v-18l-138-23Zm72,44l-65,4-3-13,4-3-4-3,3-13,65,4-3,12,3,12Z"
+      />
       <!--rect class="ec-line" x="210" y="50" width="120" height="280" /-->
     </svg>
   </div>
@@ -60,8 +61,11 @@ const translation = computed(() => `translate(0px, ${(props.position - 1) * 50}p
       <text class="ec-text" transform="translate(32 218) rotate(-45)">
         <tspan @click="setPosition(4)">HOW</tspan>
       </text>
-      <path :style="{ transform: translation }" class="ec-leaver"
-        d="M4,8v72h86V8H4ZM32,76l-10-6,2-4-4,2-6-10L58,14l8,10,10,8-44,44Z" />
+      <path
+        :style="{ transform: translation }"
+        class="ec-leaver"
+        d="M4,8v72h86V8H4ZM32,76l-10-6,2-4-4,2-6-10L58,14l8,10,10,8-44,44Z"
+      />
     </svg>
   </div>
 </template>
@@ -75,7 +79,6 @@ const translation = computed(() => `translate(0px, ${(props.position - 1) * 50}p
   @media (--tablet-breakpoint) {
     width: 80px;
   }
-
 }
 
 .ec-text {
