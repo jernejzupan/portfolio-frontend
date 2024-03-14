@@ -42,12 +42,44 @@ function toggle() {
     </nav>
   </header>
 
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 
-  <footer style="height: 200px"></footer>
+  <footer> ©2024 by Jernej Zupan </footer>
 </template>
 
-<style>
+<style scoped>
+
+header {
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 800px;
+
+    @media (--tablet-breakpoint) {
+      width: 600px;
+    }
+
+  }
+}
+
+main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) );
+}
+
+footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 </style>
