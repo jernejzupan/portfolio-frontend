@@ -26,14 +26,18 @@
     <div class="box">
       <h2>WHY</h2>
       <p>
-        What sets me apart is not just my proficiency in cutting-edge design tools and programming languages but my commitment to understanding your vision. I believe in building not just websites but digital experiences that resonate with your audience. I'm not just here to create a website; I'm here to be a partner in realizing your online aspirations.
+        What sets me apart is not just my proficiency in cutting-edge design tools and programming
+        languages but my commitment to understanding your vision. I believe in building not just
+        websites but digital experiences that resonate with your audience. I'm not just here to
+        create a website; I'm here to be a partner in realizing your online aspirations.
       </p>
     </div>
     <div class="line"></div>
     <div class="box">
       <h2>HOW</h2>
       <p>
-        If you're a small business owner or a creative individual looking to expand their presence in the digital landscape, let's collaborate.
+        If you're a small business owner or a creative individual looking to expand their presence
+        in the digital landscape, let's collaborate.
       </p>
       <a href="#">WORK WITH ME</a>
     </div>
@@ -85,7 +89,5 @@
       top: -4rem;
     }
   }
-
-
 }
 </style>

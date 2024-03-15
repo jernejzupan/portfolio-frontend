@@ -4,6 +4,8 @@
 :root {
   --color-dark: #222;
   --color-light: #fff;
+  /* --color-light: #222;
+  --color-dark: #fff; */
   --color-primary: #e32;
   --color-secondary: #7ff;
   --site-font-family: 'Roboto';
