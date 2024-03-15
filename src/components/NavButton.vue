@@ -39,12 +39,12 @@ function toggle() {
 
 <style scoped>
 .nav-btn-menu {
-  height: calc(var(--header-nav-height) - var(--header-dile-height));
+  height: 60px;
   float: right;
 }
 
 .nav-btn-menu-lines {
-  stroke: #000;
+  stroke: var(--color-dark);
   fill: none;
   stroke-width: 5px;
 }

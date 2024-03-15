@@ -67,10 +67,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 
   --column-width: 800px;
   @media (--tablet-breakpoint) {
     --column-width: 600px;
+  }
+
+  width: var(--column-width);
+
+  @media (--mobile-breakpoint) {
+    width: 90%;
   }
 
   .row-1 {
@@ -79,6 +86,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (--mobile-breakpoint) {
+      flex-direction: column;
+    }
 
     img {
       height: calc(0.5 * var(--column-width));
@@ -97,13 +108,13 @@
   }
 
   .row-2 {
-    margin-bottom: 64px;
-    max-width: var(--column-width);
+    margin: 32px 0;
+    width: 100%;
   }
 
   .row-3 {
-    margin-bottom: 64px;
-    width: var(--column-width);
+    margin: 32px 0;
+    width: 100%;
 
     div {
       h6 {

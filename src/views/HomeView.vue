@@ -1,3 +1,7 @@
+<script setup>
+import { RouterLink} from 'vue-router'
+</script>
+
 <template>
   <div class="container">
     <div class="spacer-1"></div>
@@ -9,7 +13,7 @@
         collaborate closely with my clients, turning their visions into unique and effective digital
         creations.
       </p>
-      <a href="#">SHOWCASE</a>
+      <RouterLink to="/showcase">SHOWCASE</RouterLink>
     </div>
     <div class="line"></div>
     <div class="box">
@@ -20,7 +24,7 @@
         Understanding the unique essence of your brand or creative endeavor is at the core of my
         approach.
       </p>
-      <a href="#">ABOUT</a>
+      <RouterLink to="/about">ABOUT</RouterLink>
     </div>
     <div class="line"></div>
     <div class="box">
@@ -39,7 +43,7 @@
         If you're a small business owner or a creative individual looking to expand their presence
         in the digital landscape, let's collaborate.
       </p>
-      <a href="#">WORK WITH ME</a>
+      <RouterLink to="/work-with-me">WORK WITH ME</RouterLink>
     </div>
     <div class="spacer-2"></div>
   </div>

@@ -25,19 +25,28 @@ onMounted(async () => {
 
 const mobileNavCollapsed = ref(true)
 
-function toggle() {
+function toggleNav() {
   mobileNavCollapsed.value = !mobileNavCollapsed.value
 }
+
+function closeNav() {
+  mobileNavCollapsed.value = true
+}
+
 </script>
 
 <template>
   <header>
-    <nav>
+    <div class="btn">
+      <NavButton @toggle="toggleNav" :mobileNavCollapsed="mobileNavCollapsed" />
+    </div>
+    <nav :class="{ 'mb-collapsed': mobileNavCollapsed }">
       <div v-for="(item, name) in navItems">
-        <RouterLink :to="item.to" :key="item.id">
+        <RouterLink @click="closeNav" :to="item.to" :key="item.id">
           {{ item.title }}
         </RouterLink>
       </div>
+      
     </nav>
   </header>
 
@@ -48,12 +57,29 @@ function toggle() {
   <footer>©2024 by Jernej Zupan</footer>
 </template>
 
-<style>
+<style scoped>
+.mb-collapsed {
+  @media (--mobile-breakpoint) {
+    display: none;
+  }
+}
+
 header {
-  height: var(--header-height);
+  min-height: var(--header-height);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .btn {
+    display: none;
+    
+    @media (--mobile-breakpoint) {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
 
   nav {
     display: flex;
@@ -63,6 +89,31 @@ header {
 
     @media (--tablet-breakpoint) {
       width: 600px;
+    }
+
+    @media (--mobile-breakpoint) {
+      flex-direction: column;
+      height: 100vh;
+      justify-content: start;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      margin: 1rem;
+
+      a {
+        color: var(--color-dark);
+
+        &:hover {
+          color: var(--color-secondary);
+        }
+        
+        @media (--mobile-breakpoint) {
+          font-size: 2rem;
+        }
+      }
+
     }
   }
 }
