@@ -4,15 +4,15 @@
 
     <div class="row">
       <div class="box">
-        <div class="image" style="background-image: url(./spela-blenkus-400.png);"></div>
+        <div class="image" style="background-image: url(./spela-blenkus-400.png)"></div>
         <h5>Špela Blenkuš</h5>
       </div>
       <div class="box">
-        <div class="image" style="background-image: url(./helene-feldbauer-400.png);"></div>
+        <div class="image" style="background-image: url(./helene-feldbauer-400.png)"></div>
         <h5>Helene Feldbauer</h5>
       </div>
       <div class="box">
-        <div class="image" style="background-image: url(./feldenkrais-slovenia-400.png);"></div>
+        <div class="image" style="background-image: url(./feldenkrais-slovenia-400.png)"></div>
         <h5>Feldenkrais Slovenia</h5>
       </div>
     </div>
@@ -41,7 +41,6 @@
 
   .box {
     width: 200px;
-    
 
     display: flex;
     flex-direction: column;
