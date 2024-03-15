@@ -1,5 +1,4 @@
 <script setup>
-
 function open(url) {
   window.open(url, '_blank')
 }

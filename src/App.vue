@@ -32,7 +32,6 @@ function toggleNav() {
 function closeNav() {
   mobileNavCollapsed.value = true
 }
-
 </script>
 
 <template>
@@ -46,7 +45,6 @@ function closeNav() {
           {{ item.title }}
         </RouterLink>
       </div>
-      
     </nav>
   </header>
 
@@ -73,7 +71,7 @@ header {
 
   .btn {
     display: none;
-    
+
     @media (--mobile-breakpoint) {
       display: flex;
       width: 100%;
@@ -108,12 +106,11 @@ header {
         &:hover {
           color: var(--color-secondary);
         }
-        
+
         @media (--mobile-breakpoint) {
           font-size: 2rem;
         }
       }
-
     }
   }
 }
