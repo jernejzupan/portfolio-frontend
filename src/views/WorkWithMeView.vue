@@ -10,13 +10,9 @@
     <div class="box">
       <h3>CONTACT</h3>
       <form action="https://formspree.io/f/xyyrdkob" method="POST">
-        <label>
-          Email:
-        </label>
+        <label> Email: </label>
         <input type="email" name="email" />
-        <label>
-          Message:
-        </label>
+        <label> Message: </label>
         <textarea name="message"></textarea>
         <!-- your other form fields go here -->
         <button type="submit">SEND</button>
@@ -100,7 +96,6 @@
     padding: var(--box-padding);
     text-align: center;
 
-
     form {
       margin-top: 16px;
 
@@ -130,9 +125,7 @@
         color: var(--color-light);
         cursor: pointer;
       }
-
     }
-
   }
 
   .no-border {
