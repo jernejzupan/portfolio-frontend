@@ -119,7 +119,7 @@
     div {
       h6 {
         padding-bottom: 0.4rem;
-        font-weight: 800;
+        font-weight: 700;
       }
 
       border-left: var(--line-width) solid var(--color-dark);

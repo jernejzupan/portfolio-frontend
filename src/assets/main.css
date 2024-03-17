@@ -8,7 +8,7 @@
   --color-dark: #fff; */
   --color-primary: #e32;
   --color-secondary: #7ff;
-  --site-font-family: 'Roboto';
+  --site-font-family: 'Roboto', sans-serif;
 
   --header-height: 60px;
   --footer-height: 60px;
@@ -20,7 +20,6 @@
 @custom-media --mobile-breakpoint (max-width: 800px);
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-family: var(--site-font-family);
   overscroll-behavior-y: none;
   color: var(--color-dark);
