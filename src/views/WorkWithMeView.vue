@@ -8,6 +8,23 @@
     <div class="line"></div>
     <div class="arrow"></div>
     <div class="box">
+      <h3>CONTACT</h3>
+      <form action="https://formspree.io/f/xyyrdkob" method="POST">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email" />
+        <label>
+          Message:
+        </label>
+        <textarea name="message"></textarea>
+        <!-- your other form fields go here -->
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+    <div class="line"></div>
+    <div class="arrow"></div>
+    <div class="box">
       <h3>PLAN</h3>
     </div>
     <div class="line"></div>
@@ -74,8 +91,8 @@
   }
 
   .box {
-    --box-padding: 0.8rem;
-    --box-width: 250px;
+    --box-padding: 16px;
+    --box-width: 300px;
 
     width: calc(var(--box-width) - 2 * var(--box-padding) - 2 * var(--line-width));
     border: var(--line-width) solid var(--color-dark);
@@ -83,10 +100,39 @@
     padding: var(--box-padding);
     text-align: center;
 
-    p {
-      margin-bottom: var(--box-padding);
-      font-size: 1.2rem;
+
+    form {
+      margin-top: 16px;
+
+      * {
+        width: calc(100% - 48px);
+        margin: 16px auto;
+      }
+
+      input {
+        border: var(--line-width) solid var(--color-dark);
+        padding: 8px;
+      }
+
+      textarea {
+        border: var(--line-width) solid var(--color-dark);
+        padding: 8px;
+        min-height: 64px;
+        resize: vertical;
+      }
+
+      button {
+        border: none;
+        padding: 8px 16px;
+        font-size: 24px;
+        width: calc(100% - 24px);
+        background-color: var(--color-dark);
+        color: var(--color-light);
+        cursor: pointer;
+      }
+
     }
+
   }
 
   .no-border {
