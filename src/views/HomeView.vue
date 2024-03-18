@@ -56,8 +56,12 @@ import { RouterLink } from 'vue-router'
   align-items: center;
 
   .spacer-1 {
-    height: 30vh;
+    height: 20vh;
     width: 100%;
+
+    @media (--mobile-breakpoint) {
+      height: 15vh;
+    }
   }
 
   .spacer-2 {

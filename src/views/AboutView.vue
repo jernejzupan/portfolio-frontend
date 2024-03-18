@@ -81,7 +81,7 @@
   }
 
   .row-1 {
-    margin: 64px 0;
+    margin: 32px 0;
     max-width: var(--column-width);
     display: flex;
     align-items: center;

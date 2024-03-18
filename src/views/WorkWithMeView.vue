@@ -55,7 +55,7 @@
   align-items: center;
 
   .spacer-1 {
-    height: 10vh;
+    height: 5vh;
     width: 100%;
   }
 
