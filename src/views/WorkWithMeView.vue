@@ -42,7 +42,7 @@
     <div class="arrow"></div>
     <div class="circle"></div>
     <div class="box no-border">
-      <h3>NEW PAGE</h3>
+      <h3>NEW WEBPAGE</h3>
     </div>
     <div class="spacer-2"></div>
   </div>
