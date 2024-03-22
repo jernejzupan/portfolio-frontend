@@ -9,6 +9,7 @@ import { RouterLink } from 'vue-router'
       <h1>Jernej Zupan</h1>
       <h3>Web Design & Development</h3>
     </div>
+    <div class="spacer-2"></div>
     <div class="box">
       <h2>WHAT</h2>
       <p>
@@ -49,7 +50,7 @@ import { RouterLink } from 'vue-router'
       </p>
       <RouterLink to="/work-with-me">WORK WITH ME</RouterLink>
     </div>
-    <div class="spacer-2"></div>
+    <div class="spacer-3"></div>
   </div>
 </template>
 
@@ -60,16 +61,24 @@ import { RouterLink } from 'vue-router'
   align-items: center;
 
   .spacer-1 {
+    height: 15vh;
+    width: 100%;
+
+    @media (--mobile-breakpoint) {
+      height: 5vh;
+    }
+  }
+
+  .spacer-2 {
     height: 20vh;
     width: 100%;
 
     @media (--mobile-breakpoint) {
-      height: 10vh;
+      height: 15vh;
     }
   }
 
   .title {
-    padding-bottom: 150px;
     text-align: center;
     font-weight: 700;
 
@@ -78,7 +87,7 @@ import { RouterLink } from 'vue-router'
     }
   }
 
-  .spacer-2 {
+  .spacer-3 {
     height: 20vh;
     width: 100%;
   }
