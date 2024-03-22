@@ -1,7 +1,12 @@
 <script setup>
 import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router'
-import NavDial from '@/components/NavDial.vue'
+
 import NavButton from '@/components/NavButton.vue'
+
+import IconInstagram from '@/components/icons/IconInstagram.vue'
+import IconGithub from '@/components/icons/IconGithub.vue'
+import IconLinkedin from '@/components/icons/IconLinkedin.vue'
+
 import { ref, computed, onMounted } from 'vue'
 
 const router = useRouter()
@@ -52,7 +57,20 @@ function closeNav() {
     <RouterView />
   </main>
 
-  <footer>©2024 by Jernej Zupan</footer>
+  <footer>
+    <div class="social">
+      <a href="https://www.instagram.com/jernejzupan90/" target="_blank">
+        <IconInstagram />
+      </a>
+      <a href="https://github.com/jernejzupan/" target="_blank">
+        <IconGithub />
+      </a>
+      <a href="https://www.linkedin.com/in/jernej-zupan-b587a9129/" target="_blank">
+        <IconLinkedin />
+      </a>
+    </div>
+    <div>©2024 by Jernej Zupan</div>
+  </footer>
 </template>
 
 <style scoped>
@@ -122,7 +140,26 @@ main {
 footer {
   height: var(--footer-height);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .social {
+    display: flex;
+    margin-bottom: 0.5 rem;
+  }
+
+  a {
+    display: block;
+    padding: 4px;
+
+    svg {
+      fill: var(--color-dark);
+
+      &:hover {
+        fill: var(--color-secondary);
+      }
+    }
+  }
 }
 </style>

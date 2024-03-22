@@ -64,7 +64,7 @@ import { RouterLink } from 'vue-router'
     width: 100%;
 
     @media (--mobile-breakpoint) {
-      height: 15vh;
+      height: 10vh;
     }
   }
 
@@ -79,13 +79,13 @@ import { RouterLink } from 'vue-router'
   }
 
   .spacer-2 {
-    height: 45vh;
+    height: 20vh;
     width: 100%;
   }
 
   .line {
     width: var(--line-width);
-    height: 50vh;
+    height: 30vh;
     background-color: var(--color-dark);
   }
 
