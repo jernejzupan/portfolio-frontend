@@ -5,6 +5,10 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="container">
     <div class="spacer-1"></div>
+    <div class="title">
+      <h1>Jernej Zupan</h1>
+      <h3>Web Design & Development</h3>
+    </div>
     <div class="box">
       <h2>WHAT</h2>
       <p>
@@ -61,6 +65,16 @@ import { RouterLink } from 'vue-router'
 
     @media (--mobile-breakpoint) {
       height: 15vh;
+    }
+  }
+
+  .title {
+    padding-bottom: 150px;
+    text-align: center;
+    font-weight: 700;
+
+    h1 {
+      margin-bottom: 1rem;
     }
   }
 
