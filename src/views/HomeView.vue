@@ -72,10 +72,6 @@ import { RouterLink } from 'vue-router'
   .spacer-2 {
     height: 20vh;
     width: 100%;
-
-    @media (--mobile-breakpoint) {
-      height: 15vh;
-    }
   }
 
   .title {
