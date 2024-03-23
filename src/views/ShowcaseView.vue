@@ -109,6 +109,7 @@ function open(url) {
     align-items: stretch;
     flex-wrap: wrap;
     margin-top: 32px;
+    margin-bottom: 64px;
 
     @media (--tablet-breakpoint) {
       width: 650px;
@@ -128,7 +129,6 @@ function open(url) {
       }
 
       width: var(--box-size);
-      cursor: pointer;
 
       display: flex;
       flex-direction: column;
