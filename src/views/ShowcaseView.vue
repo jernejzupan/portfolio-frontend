@@ -76,27 +76,27 @@ function open(url) {
       align-items: center;
       width: 100%;
     }
-  }
 
-  .box {
-    width: 200px;
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 32px 0;
-
-    .image {
+    .box {
       width: 200px;
-      height: 280px;
-      background-size: cover;
-      border: var(--line-width) solid var(--color-dark);
-    }
+      cursor: pointer;
 
-    h5 {
-      margin: 1rem 0.2rem;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 32px 0;
+
+      .image {
+        width: 200px;
+        height: 280px;
+        background-size: cover;
+        border: var(--line-width) solid var(--color-dark);
+      }
+
+      h5 {
+        margin: 1rem 0.2rem;
+        text-align: center;
+      }
     }
   }
 
