@@ -27,22 +27,22 @@ function open(url) {
 
     <div class="row2">
       <div class="box">
-        <video src="/light-house-v00.mp4" autoplay muted loop></video>
+        <video src="/light-house-lowres-v01.mp4" autoplay muted loop></video>
       </div>
       <div class="box">
-        <img src="/sunrise-bohinj-v01.jpg" alt="" />
+        <img src="/sunrise-bohinj-lowres-v00.jpg" alt="" />
       </div>
       <div class="box">
-        <img src="/tractor-stuck-in-mud-v00.jpg" alt="" />
+        <img src="/tractor-stuck-in-mud-lowres-v00.jpg" alt="" />
       </div>
       <div class="box">
-        <video src="/romania-bridge-timelaps-v01.mp4" autoplay muted loop></video>
+        <video src="/romania-bridge-timelaps-lowres-v00.mp4" autoplay muted loop></video>
       </div>
       <div class="box">
-        <video src="/water-fork-square-v02.mp4" autoplay muted loop></video>
+        <video src="/water-fork-square-lowres-v01.mp4" autoplay muted loop></video>
       </div>
       <div class="box">
-        <video src="/water-mill-v04.mp4" autoplay muted loop></video>
+        <video src="/water-mill-lowres-v04.mp4" autoplay muted loop></video>
       </div>
     </div>
   </div>
