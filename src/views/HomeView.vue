@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import AnimationIcosahedron from '@/components/AnimationIcosahedron.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import { RouterLink } from 'vue-router'
       <h1>Jernej Zupan</h1>
       <h3>Web Design & Development</h3>
     </div>
+    <AnimationIcosahedron />
     <div class="spacer-2"></div>
     <div class="box">
       <h2>WHAT</h2>
@@ -70,7 +72,7 @@ import { RouterLink } from 'vue-router'
   }
 
   .spacer-2 {
-    height: 20vh;
+    height: 10vh;
     width: 100%;
   }
 
