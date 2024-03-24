@@ -50,10 +50,17 @@ const icosahedron = {
   ]
 }
 
-let angle = ref(0.0)
+const count = 400
+let sin_idx = ref(0)
+let cos_idx = ref(0 + count / 4)
+
+const sin_array = [...Array(count).keys()].map((i) => Math.sin((i / count) * Math.PI * 2))
 
 setInterval(() => {
-  angle.value += 0.01
+  sin_idx.value += 1
+  cos_idx.value += 1
+  if (sin_idx.value >= count) sin_idx.value = 0
+  if (cos_idx.value >= count) cos_idx.value = 0
 }, 1000 / 60)
 
 const lines = computed(() =>
@@ -64,12 +71,13 @@ const lines = computed(() =>
     const p1 = icosahedron.vertices[v1 - 1]
     const p2 = icosahedron.vertices[v2 - 1]
 
-    let fi = angle.value
+    let sin = sin_array[sin_idx.value]
+    let cos = sin_array[cos_idx.value]
 
-    const x1 = 100 * (p1[X] * Math.cos(fi) - p1[Z] * Math.sin(fi))
+    const x1 = 100 * (p1[X] * cos - p1[Z] * sin)
     const y1 = 100 * p1[Y]
 
-    const x2 = 100 * (p2[X] * Math.cos(fi) - p2[Z] * Math.sin(fi))
+    const x2 = 100 * (p2[X] * cos - p2[Z] * sin)
     const y2 = 100 * p2[Y]
 
     return { x1, y1, x2, y2, key: index }
