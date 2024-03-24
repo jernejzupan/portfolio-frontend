@@ -8,24 +8,24 @@ function open(url) {
   <div class="container">
     <h1>Projects</h1>
 
-    <div class="row1">
+    <div class="row">
       <div class="box" @click="open('https://www.spelablenkus.com/')">
-        <div class="image" style="background-image: url(/spela-blenkus-400.png)"></div>
+        <img src="/spela-blenkus-400-560.png" />
         <h5>Špela Blenkuš</h5>
       </div>
       <div class="box" @click="open('https://www.helenefeldbauer.com/')">
-        <div class="image" style="background-image: url(/helene-feldbauer-400.png)"></div>
+        <img src="/helene-feldbauer-400-560.png" />
         <h5>Helene Feldbauer</h5>
       </div>
       <div class="box" @click="open('https://www.feldenkrais.si/')">
-        <div class="image" style="background-image: url(/feldenkrais-slovenia-400.png)"></div>
+        <img src="/feldenkrais-slovenia-400-560.png" />
         <h5>Feldenkrais Slovenia</h5>
       </div>
     </div>
 
-    <h1>Graphics</h1>
+    <h1>Gallery</h1>
 
-    <div class="row2">
+    <div class="row">
       <div class="box">
         <video src="/light-house-lowres-v01.mp4" autoplay muted loop></video>
       </div>
@@ -59,48 +59,7 @@ function open(url) {
     margin-bottom: 2rem;
   }
 
-  .row1 {
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    align-items: stretch;
-
-    @media (--tablet-breakpoint) {
-      width: 650px;
-    }
-
-    @media (--mobile-breakpoint) {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .box {
-      width: 200px;
-      cursor: pointer;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 32px 0;
-
-      .image {
-        width: 200px;
-        height: 280px;
-        background-size: cover;
-        border: var(--line-width) solid var(--color-dark);
-      }
-
-      h5 {
-        margin: 1rem 0.2rem;
-        text-align: center;
-      }
-    }
-  }
-
-  .row2 {
+  .row {
     width: 800px;
     display: flex;
     justify-content: center;
@@ -122,29 +81,27 @@ function open(url) {
     }
 
     .box {
-      --box-size: 250px;
-
-      @media (--tablet-breakpoint) {
-        --box-size: 200px;
-      }
-
-      width: var(--box-size);
-
       display: flex;
       flex-direction: column;
       align-items: left;
       margin: 8px 0;
 
-      border: var(--line-width) solid var(--color-dark);
+      width: 30%;
 
-      img {
-        width: var(--box-size);
-        height: var(--box-size);
+      @media (--mobile-breakpoint) {
+        width: 90%;
+        max-width: 320px;
       }
 
+      h5 {
+        margin: 1rem 0.2rem;
+        text-align: center;
+      }
+
+      img,
       video {
-        width: var(--box-size);
-        height: var(--box-size);
+        width: calc(100% - 2 * var(--line-width));
+        border: var(--line-width) solid var(--color-dark);
       }
     }
   }
