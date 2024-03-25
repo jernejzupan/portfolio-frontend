@@ -9,15 +9,15 @@ function open(url) {
     <h1>Projects</h1>
 
     <div class="row">
-      <div class="box" @click="open('https://www.spelablenkus.com/')">
+      <div class="box clickable" @click="open('https://www.spelablenkus.com/')">
         <img src="/spela-blenkus-400-560.png" />
         <h5>Špela Blenkuš</h5>
       </div>
-      <div class="box" @click="open('https://www.helenefeldbauer.com/')">
+      <div class="box clickable" @click="open('https://www.helenefeldbauer.com/')">
         <img src="/helene-feldbauer-400-560.png" />
         <h5>Helene Feldbauer</h5>
       </div>
-      <div class="box" @click="open('https://www.feldenkrais.si/')">
+      <div class="box clickable" @click="open('https://www.feldenkrais.si/')">
         <img src="/feldenkrais-slovenia-400-560.png" />
         <h5>Feldenkrais Slovenia</h5>
       </div>
@@ -78,6 +78,10 @@ function open(url) {
       flex-direction: column;
       align-items: center;
       width: 100%;
+    }
+
+    .clickable {
+      cursor: pointer;
     }
 
     .box {
