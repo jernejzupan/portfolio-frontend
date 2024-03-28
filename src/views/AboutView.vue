@@ -8,19 +8,14 @@
     </div>
     <div class="row-2">
       <p>
-        Ever since I was young I was interested in animation and graphics. In particular I like the
-        kinds of graphics where maths is used to create the resulting image. For example 3d graphics
-        and vector graphics.
+        I've always had a great interest in animation and graphics, particularly the kind of stuff
+        where math is used to create the resulting image, such as 3D and vector graphics.
         <br /><br />
-        I studied electrical engineering at the University of Ljubljana, where I first learned to
-        program. Throughout my career I slowly moved in the direction of web development and design,
-        where my graphic skills can shine.
+        I studied electrical engineering and later a bit of computer science. I'm an embedded
+        systems engineer turned web developer.
         <br /><br />
-        For the past 6 years I lived in Vienna where I worked for 5 years and attended the Computer
-        Science university program to learn more about how computer graphics works.
-        <br /><br />
-        My other passions and hobbies are making music, surfing, hiking, climbing, traveling and
-        playing football.
+        My other passions and hobbies are making music, surfing, hiking, climbing, traveling,
+        playing football, and tinkering with electronics.
       </p>
     </div>
     <div class="row-3">
@@ -70,6 +65,7 @@
   margin: 0 auto;
 
   --column-width: 800px;
+
   @media (--tablet-breakpoint) {
     --column-width: 600px;
   }
