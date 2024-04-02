@@ -14,8 +14,8 @@
         I studied electrical engineering and later a bit of computer science. I'm an embedded
         systems engineer turned web developer.
         <br /><br />
-        My other passions and hobbies are making music, surfing, hiking, climbing, traveling,
-        playing football, and tinkering with electronics.
+        My other passions and hobbies are drawing, making music, surfing, hiking, climbing,
+        traveling, playing football, and tinkering with electronics.
       </p>
     </div>
     <div class="row-3">
