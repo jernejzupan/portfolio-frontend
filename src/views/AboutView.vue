@@ -31,7 +31,7 @@
       </div>
       <div>
         <h6>Field Application Engineer</h6>
-        <p>Nov 2016 - Feb 2022</p>
+        <p>Nov 2016 - Feb 2021</p>
         <p>Vector Austria GmbH</p>
         <p>Automotive software</p>
       </div>
