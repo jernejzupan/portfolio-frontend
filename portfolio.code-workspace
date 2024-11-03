@@ -1,14 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "../../../../izobrazba/vue/laracasts/vue-tutorial"
+			"path": "."
 		},
-		{
-			"path": ".."
-		},
-		{
-			"path": "../../personal-web-page"
-		}
 	],
 	"settings": {}
 }
