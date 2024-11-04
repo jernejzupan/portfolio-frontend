@@ -27,7 +27,7 @@ function open(url) {
 
     <div class="row">
       <div class="box">
-        <video src="/light-house-lowres-v01.mp4" autoplay muted loop></video>
+        <video src="/light-house-lowres-v01.mp4" autoplay muted loop playsinline></video>
       </div>
       <div class="box">
         <img src="/sunrise-bohinj-lowres-v00.jpg" alt="" />
@@ -36,13 +36,19 @@ function open(url) {
         <img src="/tractor-stuck-in-mud-lowres-v00.jpg" alt="" />
       </div>
       <div class="box">
-        <video src="/romania-bridge-timelaps-lowres-v00.mp4" autoplay muted loop></video>
+        <video
+          src="/romania-bridge-timelaps-lowres-v00.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
       </div>
       <div class="box">
-        <video src="/water-fork-square-lowres-v01.mp4" autoplay muted loop></video>
+        <video src="/water-fork-square-lowres-v01.mp4" autoplay muted loop playsinline></video>
       </div>
       <div class="box">
-        <video src="/water-mill-lowres-v04.mp4" autoplay muted loop></video>
+        <video src="/water-mill-lowres-v04.mp4" autoplay muted loop playsinline></video>
       </div>
     </div>
   </div>
