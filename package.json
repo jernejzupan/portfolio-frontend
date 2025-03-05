@@ -13,8 +13,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@xstate/vue": "^4.0.2",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "xstate": "^5.19.2"
   },
   "devDependencies": {
     "@csstools/postcss-global-data": "^2.1.1",

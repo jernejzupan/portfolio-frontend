@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/demos/feedback-machine',
+      name: 'feedback-machine',
+      component: () => import('../views/DemoFeedbackMachineView.vue')
     }
   ]
 })

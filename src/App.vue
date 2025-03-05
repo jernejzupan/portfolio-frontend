@@ -19,15 +19,6 @@ const navItems = {
   about: { title: 'ABOUT', to: '/about', id: 4 }
 }
 
-const dialPosition = ref(1)
-
-const currentRouteName = computed(() => route.name)
-
-onMounted(async () => {
-  await router.isReady()
-  dialPosition.value = navItems[route.name].id
-})
-
 const mobileNavCollapsed = ref(true)
 
 function toggleNav() {
