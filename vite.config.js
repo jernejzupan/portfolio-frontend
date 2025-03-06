@@ -15,5 +15,8 @@ export default defineConfig({
   },
   build: {
     minify: true
+  },
+  server: {
+    allowedHosts: ['jernejzupan.com'],
   }
 })
