@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router'
+
 function open(url) {
   window.open(url, '_blank')
 }
@@ -22,6 +24,11 @@ function open(url) {
         <h5>Feldenkrais Slovenia</h5>
       </div>
     </div>
+
+    <h1>Slides</h1>
+
+    <h3><RouterLink to="/slides/vue-and-xstate">Vue & xState</RouterLink></h3>
+    <br /><br /><br /><br /><br /><br />
 
     <h1>Gallery</h1>
 

@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router'
+import { ref, provide } from 'vue'
 
 import NavButton from '@/components/NavButton.vue'
 
@@ -7,10 +8,10 @@ import IconInstagram from '@/components/icons/IconInstagram.vue'
 import IconGithub from '@/components/icons/IconGithub.vue'
 import IconLinkedin from '@/components/icons/IconLinkedin.vue'
 
-import { ref, computed, onMounted } from 'vue'
-
 const router = useRouter()
 const route = useRoute()
+const showLayout = ref(true)
+provide('showLayout', showLayout)
 
 const navItems = {
   home: { title: 'HOME', to: '/', id: 1 },
@@ -31,7 +32,7 @@ function closeNav() {
 </script>
 
 <template>
-  <header>
+  <header v-if="showLayout">
     <div class="btn">
       <NavButton @toggle="toggleNav" :mobileNavCollapsed="mobileNavCollapsed" />
     </div>
@@ -48,7 +49,7 @@ function closeNav() {
     <RouterView />
   </main>
 
-  <footer>
+  <footer v-if="showLayout">
     <div class="social">
       <a href="https://www.instagram.com/jernejzupan90/" target="_blank">
         <IconInstagram />
@@ -60,7 +61,7 @@ function closeNav() {
         <IconLinkedin />
       </a>
     </div>
-    <div>©2024 by Jernej Zupan</div>
+    <div>©2025 by Jernej Zupan</div>
   </footer>
 </template>
 

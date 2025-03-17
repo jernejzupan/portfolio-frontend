@@ -25,9 +25,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/demos/feedback-machine',
-      name: 'feedback-machine',
-      component: () => import('../views/DemoFeedbackMachineView.vue')
+      path: '/slides/vue-and-xstate',
+      name: 'vue-and-xstate',
+      component: () => import('../views/slides/VueAndXstateSlides.vue')
     }
   ]
 })
