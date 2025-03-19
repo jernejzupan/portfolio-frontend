@@ -16,7 +16,7 @@ const slideIndex = ref(registerSlide())
 
     <!-- Navigation menu -->
     <div class="nav-menu">
-      <span><RouterLink to="/">HOME</RouterLink></span>
+      <span><RouterLink to="/" style="margin-right: 20px">HOME</RouterLink></span>
       <button @click="prevSlide">◀</button>
       <span>{{ currentSlide + 1 }} / {{ slideCount }}</span>
       <button @click="nextSlide">▶</button>
@@ -37,7 +37,7 @@ const slideIndex = ref(registerSlide())
 
 .nav-menu {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
   display: flex;
   align-items: center;
@@ -55,6 +55,6 @@ const slideIndex = ref(registerSlide())
 }
 
 .nav-menu button:hover {
-  color: #ffcc00;
+  color: var(--color-primary);
 }
 </style>
