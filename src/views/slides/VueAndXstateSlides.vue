@@ -25,7 +25,10 @@ import Slide from '@/components/Slide.vue'
     <Slide>
       <h2>FSM Semaphor (fewer states)</h2>
       <img src="/fsm-semaphor-2-wh.png" />
-      <a href="https://codepen.io/jernejzupan/pen/jEOzELm?editors=0011" target="_blank">Example</a>
+      <a href="https://codepen.io/jernejzupan/pen/jEOzELm?editors=0011" target="_blank"
+        >Bad Example</a
+      >
+      <a href="https://codepen.io/jernejzupan/pen/ZYExGBw" target="_blank">Good Example</a>
     </Slide>
 
     <Slide>
@@ -55,7 +58,6 @@ import Slide from '@/components/Slide.vue'
 
     <Slide>
       <h2>Libraries</h2>
-      <p>Sismic (python)</p>
       <p>Qt (C++, python)</p>
       <p>QP (Embedded C/C++)</p>
       <p>xState (JS)</p>
@@ -69,6 +71,30 @@ import Slide from '@/components/Slide.vue'
     <Slide>
       <h2>Vue + xState ♥️</h2>
       <img src="/fsm-mvc-vue-xstate-wh.png" />
+    </Slide>
+
+    <Slide>
+      <h2>Strategy App</h2>
+      <a href="https://github.com/jernejzupan/soccer-strategy-app-vue" target="_blank">GitHub</a>
+    </Slide>
+
+    <Slide>
+      <h2>Resources</h2>
+      <a href="https://www.state-machine.com/doc/PSiCC.pdf" target="_blank"
+        >Practical Statecharts in C/C++</a
+      >
+      <a href="https://www.state-machine.com/an" target="_blank"
+        >QP App Notes (See Articles Segment)</a
+      >
+      <a href="https://www.state-machine.com/doc/Harel10.pdf" target="_blank"
+        >Statecharts in the Making: A Personal Account</a
+      >
+      <a href="https://youtu.be/GSHQFx7PG20?si=JB-Aj6yBPVY7xgfX" target="_blank"
+        >David Khourshid - Talks</a
+      >
+      <a href="https://laracasts.com/series/learn-vue-3-step-by-step" target="_blank"
+        >Learn Vue 3 Step By Step</a
+      >
     </Slide>
 
     <Slide>
@@ -106,5 +132,6 @@ img {
 
 a {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 </style>
