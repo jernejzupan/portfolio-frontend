@@ -134,4 +134,22 @@ a {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+@media (--mobile-breakpoint) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
 </style>
