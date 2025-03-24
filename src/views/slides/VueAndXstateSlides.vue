@@ -122,8 +122,9 @@ p {
   margin-bottom: 0.5rem;
 }
 img {
-  width: 100%;
-  max-width: 800px;
+  /*max-width: 800px;*/
+  max-height: 70vh;
+  max-width: 100vw;
 }
 
 .qr {
